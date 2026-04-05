@@ -28,7 +28,9 @@ class IptvChecker < Formula
 
   def install
     if OS.mac?
-      prefix.install Pathname.pwd
+      app = prefix/"IPTV Checker.app"
+      (app/"Contents").parent.mkpath
+      cp_r "Contents", app/"Contents"
     else
       bin.install Dir["*"].first => "iptv-checker"
     end
