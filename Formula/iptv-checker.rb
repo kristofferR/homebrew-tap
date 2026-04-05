@@ -31,26 +31,16 @@ class IptvChecker < Formula
       app = prefix/"IPTV Checker.app"
       (app/"Contents").parent.mkpath
       cp_r "Contents", app/"Contents"
+      bin.install_symlink app/"Contents/MacOS/iptv-checker" => "iptv-checker"
     else
       bin.install Dir["*"].first => "iptv-checker"
-    end
-  end
-
-  def caveats
-    on_macos do
-      <<~EOS
-        IPTV Checker.app has been installed to:
-          #{prefix}/IPTV Checker.app
-
-        To add it to your Applications folder:
-          ln -sf "#{prefix}/IPTV Checker.app" "/Applications/IPTV Checker.app"
-      EOS
     end
   end
 
   test do
     if OS.mac?
       assert_predicate prefix/"IPTV Checker.app/Contents/MacOS/iptv-checker", :exist?
+      assert_predicate bin/"iptv-checker", :exist?
     else
       assert_predicate bin/"iptv-checker", :exist?
     end
