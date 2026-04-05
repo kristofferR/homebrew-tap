@@ -4,10 +4,10 @@ cask "iptv-checker" do
 
   version "1.0.0"
   on_macos do
-    sha256 arm:   "f4a03acfeeb743787677338d774c324e7325411acea7b64f48df2cb83552490d",
-           intel: "4c93dcd2e6f454576c91119085d34343095f8f6c412f61973e130bce38486184"
+    sha256 arm:   "ea48a8f6b177bb07b7e6b25fb6a82b11e646b3e192d9ab3dfd644417da360d91",
+           intel: "2260fa9f593b74cd89806c9d14d03f6958ff1066ae50d888565296288b62ed33"
 
-    url "https://github.com/kristofferR/IPTVChecker/releases/download/v#{version}/IPTV.Checker_#{version}_#{os}_#{arch}.app.tar.gz",
+    url "https://github.com/kristofferR/IPTVChecker/releases/download/v#{version}/IPTV.Checker_#{version}_#{os}_#{arch}.dmg",
         verified: "github.com/kristofferR/IPTVChecker/"
   end
 
