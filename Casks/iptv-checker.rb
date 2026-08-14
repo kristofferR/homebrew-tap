@@ -1,16 +1,16 @@
 cask "iptv-checker" do
-  version "1.7.0"
+  version "1.8.1"
 
   on_macos do
     on_arm do
-      sha256 "c5f98293a868f3e3a0f4380f1d8f27565af56feac81e5b5ae97904908b6d89e9"
+      sha256 "99a3ea3c3360b9054dd72c42de78574836ff50b5c2aac2f21b17a72b2d14e5d4"
 
       url "https://github.com/kristofferR/IPTVChecker/releases/download/v#{version}/IPTV.Checker_#{version}_mac_arm.dmg",
 verified: "github.com/kristofferR/IPTVChecker/"
     end
 
     on_intel do
-      sha256 "91f1e5aac86f696cf7703271b4a162249c798b7c2e849df7950c6ac4810ed43d"
+      sha256 "55377e65ac0ca3e0290e1661ff178b84e1ca92359b0152fd82b3bef430e12825"
 
       url "https://github.com/kristofferR/IPTVChecker/releases/download/v#{version}/IPTV.Checker_#{version}_mac_x64.dmg",
 verified: "github.com/kristofferR/IPTVChecker/"
@@ -19,14 +19,14 @@ verified: "github.com/kristofferR/IPTVChecker/"
 
   on_linux do
     on_arm do
-      sha256 "fc0d4587df86f6373ad0be5ae0f6989a3b7be3d999613a45dd8a18a0b588c6a5"
+      sha256 "ee544cec782a1c5a92d1c6af1cb145d442999f9510c47bb605e5ec57351253a0"
 
       url "https://github.com/kristofferR/IPTVChecker/releases/download/v#{version}/IPTV.Checker_#{version}_lin_arm.AppImage",
 verified: "github.com/kristofferR/IPTVChecker/"
     end
 
     on_intel do
-      sha256 "c4106ee42ea5681132f4cad3672aaaab2c8fbd07b1879ad4881c12bef33a6984"
+      sha256 "0eabe65fcfcab3c9955fad84b3aa66b1448069f44b99bc90f1313d2d898d97ba"
 
       url "https://github.com/kristofferR/IPTVChecker/releases/download/v#{version}/IPTV.Checker_#{version}_lin_x64.AppImage",
 verified: "github.com/kristofferR/IPTVChecker/"
@@ -38,6 +38,10 @@ verified: "github.com/kristofferR/IPTVChecker/"
   name "IPTV Checker"
   desc "Validate IPTV playlists and inspect stream health"
   homepage "https://github.com/kristofferR/IPTVChecker"
+
+  # The app ships a signed in-app updater, so a cask-installed copy can
+  # update itself between `brew upgrade` runs.
+  auto_updates true
 
   preflight do
     old_app = Pathname.new("/Applications/IPTV Checker.app")
