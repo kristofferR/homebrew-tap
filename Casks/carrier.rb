@@ -1,16 +1,16 @@
 cask "carrier" do
-  version "1.10.1"
+  version "1.10.2"
 
   on_macos do
     on_arm do
-      sha256 "b670b54a5e672c2564bc54fb531864d1b61915982e7376a035b538c3ca7aba61"
+      sha256 "064b643a3247c0147dd245198485c010fd1a60bdc4f423b28c61d05dafa1a62b"
 
       url "https://github.com/kristofferR/Carrier/releases/download/v#{version}/Carrier_#{version}_mac_arm.dmg",
 verified: "github.com/kristofferR/Carrier/"
     end
 
     on_intel do
-      sha256 "75b569522cef7f114dd2cb244576e455c30716754d69aea72fa3303713c5692a"
+      sha256 "d0a81a8791a690741a677084654e7ff9ae409ab439fa3f7cbd8af33ea341cd45"
 
       url "https://github.com/kristofferR/Carrier/releases/download/v#{version}/Carrier_#{version}_mac_intel.dmg",
 verified: "github.com/kristofferR/Carrier/"
@@ -19,14 +19,14 @@ verified: "github.com/kristofferR/Carrier/"
 
   on_linux do
     on_arm do
-      sha256 "c3e34f3a4a0a0f477a8f6c03823ffd554f19532740e8b027ed6d228615617cae"
+      sha256 "10bf1b2d6ae010c6dc9a9f1d469547c38743698dfd701614ea88906713e5dfc9"
 
       url "https://github.com/kristofferR/Carrier/releases/download/v#{version}/Carrier_#{version}_lin_arm.AppImage",
 verified: "github.com/kristofferR/Carrier/"
     end
 
     on_intel do
-      sha256 "ae0669e53d7f1431a814c7e393c9d0412c7fd865828a320050ac8b86ba3683ed"
+      sha256 "4cb372021cbeb0eed2b53667d89066a10a4914f36cc549853b253bba87ff0324"
 
       url "https://github.com/kristofferR/Carrier/releases/download/v#{version}/Carrier_#{version}_lin_x64.AppImage",
 verified: "github.com/kristofferR/Carrier/"
