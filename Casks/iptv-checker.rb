@@ -1,16 +1,16 @@
 cask "iptv-checker" do
-  version "2.0.0"
+  version "2.0.1"
 
   on_macos do
     on_arm do
-      sha256 "3dad1d438e1762075162c6f8dd542c878991fe823cadc49a6208978b7b8b0ba7"
+      sha256 "09c98f0ec5f9bd39449df7ab8ac4e3a07b0b8f44cc4ec7be4abba0858a78ed35"
 
       url "https://github.com/kristofferR/IPTVChecker/releases/download/v#{version}/IPTV.Checker_#{version}_mac_arm.dmg",
 verified: "github.com/kristofferR/IPTVChecker/"
     end
 
     on_intel do
-      sha256 "51dcab77f288c02ac80039555d3abd3633b0d142d525063c222c1f73156313b9"
+      sha256 "f8c392107b4e04918cd83bf830d18cac6b18a31ca7a52343564ea668dc050892"
 
       url "https://github.com/kristofferR/IPTVChecker/releases/download/v#{version}/IPTV.Checker_#{version}_mac_x64.dmg",
 verified: "github.com/kristofferR/IPTVChecker/"
@@ -19,14 +19,14 @@ verified: "github.com/kristofferR/IPTVChecker/"
 
   on_linux do
     on_arm do
-      sha256 "92860218a97e1996101fbeaa14f7c2f75467dee709074ce0dc1bb2a689be98a4"
+      sha256 "d3ba8fc0c46241ea074c7517303b96271a99b84b5ab34278653014523f41de30"
 
       url "https://github.com/kristofferR/IPTVChecker/releases/download/v#{version}/IPTV.Checker_#{version}_lin_arm.AppImage",
 verified: "github.com/kristofferR/IPTVChecker/"
     end
 
     on_intel do
-      sha256 "b2da1dff8c1cebe8bd373e3db40aaa478cd0bbb93bfb9dee6a2d7b2e89fe7c09"
+      sha256 "a3ab811d127de892639f7f9ad7e57c99250051e01445ef834ea9133c9aed722f"
 
       url "https://github.com/kristofferR/IPTVChecker/releases/download/v#{version}/IPTV.Checker_#{version}_lin_x64.AppImage",
 verified: "github.com/kristofferR/IPTVChecker/"
