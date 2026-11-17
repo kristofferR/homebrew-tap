@@ -3,11 +3,11 @@ cask "chatpane" do
   os macos: "mac", linux: "lin"
   url_end = on_system_conditional macos: "dmg", linux: "AppImage"
 
-  version "3.2.0"
-  sha256 arm:          "d09ebcbe40715b8e4bff6ad6d06b43888b88c87410d440aef8c4f3747a552b6d",
-         intel:        "247203c4c13d9f5068a238c46fb8f9ad171c89e47d8a4a12354f6d113aa37bf9",
-         arm64_linux:  "71b4a2fd697deffa5e7e471480383835385da7306d053415bac02589e7dfbc82",
-         x86_64_linux: "219448f37988e62794de2fff4ffb92bdc59fdc65c9da756a0e9f1ae5fe8ffa27"
+  version "3.3.0"
+  sha256 arm:          "897cf874625ac79e82c1829c634a80b4939c7313215f62c8e8f718c229eaca66",
+         intel:        "1694d91490f33ac3ab4091100d5f110704af14b2ede59c2542238f1ec630ad6d",
+         arm64_linux:  "40c368fafcfbc269e8b6261bab76da5530b0c04a61ca89e8484e28b025ecec7c",
+         x86_64_linux: "36e7069c84bed0165a194ff9721005c24a6327e3f6a71ecf05761c12c36a172c"
 
   on_macos do
     app "Chatpane.app"
